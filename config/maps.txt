@@ -14,11 +14,11 @@ Format:
 endmap
 
 map vanderlin
-	default
 	votable
 endmap
 
 map rosewood
+	default
 	minplayers 90
 	votable
 endmap
