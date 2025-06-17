@@ -1,1 +1,1 @@
-1gnite = HOST
+1gnite = Host
