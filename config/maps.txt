@@ -18,7 +18,6 @@ map vanderlin
 endmap
 
 map rosewood
-	default
 	minplayers 90
 	votable
 endmap
@@ -29,6 +28,7 @@ map daftmarsh
 endmap
 
 map whitepalacepass
+	default
 	maxplayers 90
 	votable
 endmap
