@@ -249,7 +249,7 @@ SUBSYSTEM_DEF(ticker)
 			else
 				if(world.time > last_vote_time + time_until_vote)
 					SSvote.initiate_vote("endround", "The Gods")
-
+/*	
 /datum/controller/subsystem/ticker/proc/checkreqroles()
 	var/list/readied_jobs = list()
 	var/list/required_jobs = list("Monarch")
@@ -276,7 +276,7 @@ SUBSYSTEM_DEF(ticker)
 
 	job_change_locked = TRUE
 	return TRUE
-
+*/
 /datum/controller/subsystem/ticker/proc/setup()
 	message_admins(span_boldannounce("Starting game..."))
 	var/init_start = world.timeofday
