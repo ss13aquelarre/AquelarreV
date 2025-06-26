@@ -208,17 +208,19 @@ SUBSYSTEM_DEF(ticker)
 				tipped = TRUE
 
 			if(timeLeft <= 0)
+				/*
 				if(!checkreqroles())
 					current_state = GAME_STATE_STARTUP
 					start_at = world.time + timeDelayAdd
 					timeLeft = null
 					Master.SetRunLevel(RUNLEVEL_LOBBY)
-				else
-					send2chat(new /datum/tgs_message_content("New round starting on Vanderlin!"), CONFIG_GET(string/chat_announce_new_game))
-					current_state = GAME_STATE_SETTING_UP
-					Master.SetRunLevel(RUNLEVEL_SETUP)
-					if(start_immediately)
-						fire()
+				else 
+				*/
+				send2chat(new /datum/tgs_message_content("New round starting on Vanderlin!"), CONFIG_GET(string/chat_announce_new_game))
+				current_state = GAME_STATE_SETTING_UP
+				Master.SetRunLevel(RUNLEVEL_SETUP)
+				if(start_immediately)
+					fire()
 
 		if(GAME_STATE_SETTING_UP)
 			if(!setup())
