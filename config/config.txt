@@ -16,7 +16,7 @@ $include plexora.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-SERVERNAME Aquelarre
+SERVERNAME AQUELARRE | SERVIDOR HISPANO
 
 ## Server subtitle: This appears right after the server name in the BYOND hub.
 SERVERSUBTITLE Roleplay de Fantasía Oscura Medieval
