@@ -206,18 +206,18 @@ SUBSYSTEM_DEF(ticker)
 				tipped = TRUE
 
 			if(timeLeft <= 0)
-				if(!checkreqroles())
+				/*if(!checkreqroles())
 					current_state = GAME_STATE_STARTUP
 					start_at = world.time + timeDelayAdd
 					timeLeft = null
 					Master.SetRunLevel(RUNLEVEL_LOBBY)
-				else
-					send2chat(new /datum/tgs_message_content("New round starting on Vanderlin!"), CONFIG_GET(string/chat_announce_new_game))
-					SEND_SIGNAL(src, COMSIG_TICKER_ENTER_SETTING_UP)
-					current_state = GAME_STATE_SETTING_UP
-					Master.SetRunLevel(RUNLEVEL_SETUP)
-					if(start_immediately)
-						fire()
+				else*/
+				send2chat(new /datum/tgs_message_content("New round starting on Vanderlin!"), CONFIG_GET(string/chat_announce_new_game))
+				SEND_SIGNAL(src, COMSIG_TICKER_ENTER_SETTING_UP)
+				current_state = GAME_STATE_SETTING_UP
+				Master.SetRunLevel(RUNLEVEL_SETUP)
+				if(start_immediately)
+					fire()
 
 		if(GAME_STATE_SETTING_UP)
 			if(!setup())
@@ -285,7 +285,7 @@ SUBSYSTEM_DEF(ticker)
 			job_to_set.set_spawn_and_total_positions(ready_town_count)
 
 
-/datum/controller/subsystem/ticker/proc/checkreqroles()
+/*/datum/controller/subsystem/ticker/proc/checkreqroles()
 	var/list/readied_jobs = list()
 	var/list/required_jobs = list("Monarch")
 #ifdef TESTING
@@ -311,7 +311,7 @@ SUBSYSTEM_DEF(ticker)
 			return FALSE
 
 	job_change_locked = TRUE
-	return TRUE
+	return TRUE */
 
 /datum/controller/subsystem/ticker/proc/setup()
 	message_admins(span_boldannounce("Starting game..."))
