@@ -19,6 +19,7 @@ endmap
 
 map rosewood
 	minplayers 90
+	default
 	votable
 endmap
 
@@ -34,6 +35,5 @@ endmap
 
 map voyager
 	maxplayers 0
-	default
 	votable
 endmap
